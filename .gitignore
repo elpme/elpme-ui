@@ -4,5 +4,5 @@ node_modules
 .sass-cache
 .idea
 styles/style.css
-.dist
-.bower_components
+dist
+bower_components
