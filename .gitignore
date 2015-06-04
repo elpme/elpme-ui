@@ -5,3 +5,4 @@ node_modules
 .idea
 styles/style.css
 .dist
+.bower_components
