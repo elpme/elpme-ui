@@ -1,6 +1,6 @@
 # elpme-UI
 
-This contains the codebase for the User Interface for elpme.
+This contains the codebase for the User Interface of this app.
 
 
 ## Steps to run this project
@@ -13,4 +13,4 @@ Please follow these steps:
 * Navigate to the cloned directory
 * run sudo npm install
 * run bower install
-* run gulp serve
+* run grunt serve
