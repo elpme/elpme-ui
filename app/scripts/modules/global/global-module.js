@@ -11,7 +11,7 @@
 (function () {
   var app = angular.module('elpme_GMD', [
       'elpme_RouteCSTMD',
-      'elpme_HomeMD',
+      'elpme_HomeMD'
     ]).config([
       '$compileProvider',
       '$filterProvider',
