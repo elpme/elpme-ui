@@ -4,7 +4,8 @@ angular.module('elpme_HomeMD')
   .controller('elpme_HomeCT', [
     '$scope',
     'elpme_GSV',
-    function ($scope, globalService) {
+    'elpme_SharedDataSV',
+    function ($scope, globalService, SharedDataSV) {
 
       console.log("Home controller loaded successfully");
 

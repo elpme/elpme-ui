@@ -10,13 +10,15 @@
  */
 (function () {
   var app = angular.module('elpme_GMD', [
-      'elpme_RouteCSTMD',
-      'elpme_HomeMD'
-    ]).config([
-      '$compileProvider',
-      '$filterProvider',
-      function ($compileProvider, $filterProvider) {
-        app.compileProvider = $compileProvider;
-        app.filterProvider = $filterProvider;
-      }])
+    'elpme_SharedDataMD',
+    'elpme_RouteCSTMD',
+    'elpme_HomeMD',
+    'elpme_SelectLocationMD'
+  ]).config([
+    '$compileProvider',
+    '$filterProvider',
+    function ($compileProvider, $filterProvider) {
+      app.compileProvider = $compileProvider;
+      app.filterProvider = $filterProvider;
+    }])
 }());
