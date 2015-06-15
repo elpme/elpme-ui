@@ -21,6 +21,8 @@ module.exports = function (grunt) {
     dist: 'dist'
   };
 
+  grunt.loadNpmTasks('grunt-contrib-less');
+
   // Define the configuration for all the tasks
   grunt.initConfig({
 
@@ -44,9 +46,9 @@ module.exports = function (grunt) {
         files: ['test/spec/{,*/}*.js'],
         tasks: ['newer:jshint:test', 'karma']
       },
-      styles: {
-        files: ['<%= yeoman.app %>/styles/{,*/}*.css'],
-        tasks: ['newer:copy:styles', 'autoprefixer']
+      less: {
+        files: ['<%= yeoman.app %>/styles/less/**'],
+        tasks: ['less:server']
       },
       gruntfile: {
         files: ['Gruntfile.js']
@@ -351,6 +353,18 @@ module.exports = function (grunt) {
         configFile: 'test/karma.conf.js',
         singleRun: true
       }
+    },
+
+    //Less to CSS conversion
+    less: {
+      server: {
+        options: {
+          paths: ["app/styles/css"]
+        },
+        files: {
+          "app/styles/css/style.css": "app/styles/less/style.less"
+        }
+      }
     }
   });
 
@@ -362,6 +376,7 @@ module.exports = function (grunt) {
 
     grunt.task.run([
       'clean:server',
+      'less:server',
       'wiredep',
       'concurrent:server',
       'autoprefixer',
@@ -385,6 +400,7 @@ module.exports = function (grunt) {
 
   grunt.registerTask('build', [
     'clean:dist',
+    'less:server',
     'wiredep',
     'useminPrepare',
     'concurrent:dist',
