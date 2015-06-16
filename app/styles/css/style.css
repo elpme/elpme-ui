@@ -1,3 +1,93 @@
-.container {
-  background: green;
+/* --------------------------------------------------
+             Less Variable declaration
+ ---------------------------------------------------*/
+/* Hind fonts path */
+/* Icon fonts path */
+/* --------------------------------------------------
+                    Embedding fonts
+ ---------------------------------------------------*/
+@font-face {
+  font-family: 'hind_regular';
+  src: url('../../vendor/fonts/hind/hind-regular-webfont.eot');
+  src: url('../../vendor/fonts/hind/hind-regular-webfont.eot?#iefix') format('embedded-opentype'), url('../../vendor/fonts/hind/hind-regular-webfont.woff2') format('woff2'), url('../../vendor/fonts/hind/hind-regular-webfont.woff') format('woff'), url('../../vendor/fonts/hind/font/hind-regular-webfont.ttf') format('truetype'), url('../../vendor/fonts/hind/hind-regular-webfont.svg#hind_regularregular') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'hind_bold';
+  src: url('../../vendor/fonts/hind/hind-bold-webfont.eot');
+  src: url('../../vendor/fonts/hind/hind-bold-webfont.eot?#iefix') format('embedded-opentype'), url('../../vendor/fonts/hind/hind-bold-webfont.woff2') format('woff2'), url('../../vendor/fonts/hind/hind-bold-webfont.woff') format('woff'), url('../../vendor/fonts/hind/hind-bold-webfont.ttf') format('truetype'), url('../../vendor/fonts/hind/hind-bold-webfont.svg#hindbold') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'hind_light';
+  src: url('../../vendor/fonts/hind/hind-light-webfont.eot');
+  src: url('../../vendor/fonts/hind/hind-light-webfont.eot?#iefix') format('embedded-opentype'), url('../../vendor/fonts/hind/hind-light-webfont.woff2') format('woff2'), url('../../vendor/fonts/hind/hind-light-webfont.woff') format('woff'), url('../../vendor/fonts/hind/hind-light-webfont.ttf') format('truetype'), url('../../vendor/fonts/hind/hind-light-webfont.svg#hindlight') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'hind_medium';
+  src: url('../../vendor/fonts/hind/hind-medium-webfont.eot');
+  src: url('../../vendor/fonts/hind/hind-medium-webfont.eot?#iefix') format('embedded-opentype'), url('../../vendor/fonts/hind/hind-medium-webfont.woff2') format('woff2'), url('../../vendor/fonts/hind/hind-medium-webfont.woff') format('woff'), url('../../vendor/fonts/hind/hind-medium-webfont.ttf') format('truetype'), url('../../vendor/fonts/hind/hind-medium-webfont.svg#hindmedium') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'hind_semibold';
+  src: url('../../vendor/fonts/hindhind-semibold-webfont.eot');
+  src: url('../../vendor/fonts/hindhind-semibold-webfont.eot?#iefix') format('embedded-opentype'), url('../../vendor/fonts/hindhind-semibold-webfont.woff2') format('woff2'), url('../../vendor/fonts/hindhind-semibold-webfont.woff') format('woff'), url('../../vendor/fonts/hindhind-semibold-webfont.ttf') format('truetype'), url('../../vendor/fonts/hindhind-semibold-webfont.svg#hindsemibold') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'icomoon';
+  src: url('../../vendor/fonts/icomoon/icomoon.eot?nxv2nr');
+  src: url('../../vendor/fonts/icomoon/icomoon.eot?#iefixnxv2nr') format('embedded-opentype'), url('../../vendor/fonts/icomoon/icomoon.ttf?nxv2nr') format('truetype'), url('../../vendor/fonts/icomoon/icomoon.woff?nxv2nr') format('woff'), url('../../vendor/fonts/icomoon/icomoon.svg?nxv2nr#icomoon') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+[class^="icon-"],
+[class*=" icon-"] {
+  font-family: 'icomoon';
+  speak: none;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+.icon-Addplus:before {
+  content: "\e600";
+}
+.icon-Electrician:before {
+  content: "\e601";
+}
+.icon-GroceryStore:before {
+  content: "\e602";
+}
+.icon-Housemade:before {
+  content: "\e603";
+}
+.icon-Locationpin:before {
+  content: "\e604";
+}
+.icon-MedicalStore:before {
+  content: "\e605";
+}
+.icon-Menu:before {
+  content: "\e606";
+}
+.icon-Mideye:before {
+  content: "\e607";
+}
+/* --------------------------------------------------
+              Overwrite default element style
+ ---------------------------------------------------*/
+body {
+  font-family: 'hind_regular';
 }
