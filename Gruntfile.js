@@ -59,8 +59,7 @@ module.exports = function (grunt) {
         },
         files: [
           '<%= yeoman.app %>/{,*/}*.html',
-          '.tmp/styles/{,*/}*.css',
-          '<%= yeoman.app %>/images/{,*/}*.{png,jpg,jpeg,gif,webp,svg}'
+          '<%= yeoman.app %>/styles/{css,images}/**',
         ]
       }
     },
@@ -70,22 +69,16 @@ module.exports = function (grunt) {
       options: {
         port: 9005,
         // Change this to '0.0.0.0' to access the server from outside.
-        hostname: 'localhost',
+        hostname: '0.0.0.0',
         livereload: 35729
       },
       livereload: {
         options: {
           open: true,
-          middleware: function (connect) {
-            return [
-              connect.static('.tmp'),
-              connect().use(
-                '/bower_components',
-                connect.static('./bower_components')
-              ),
-              connect.static(appConfig.app)
-            ];
-          }
+          base: [
+            '<%= yeoman.app %>',
+            '<%= yeoman.app %>/..'
+          ]
         }
       },
       test: {
@@ -377,7 +370,7 @@ module.exports = function (grunt) {
     grunt.task.run([
       'clean:server',
       'less:server',
-      'wiredep',
+//      'wiredep',
       'concurrent:server',
       'autoprefixer',
       'connect:livereload',
@@ -401,12 +394,12 @@ module.exports = function (grunt) {
   grunt.registerTask('build', [
     'clean:dist',
     'less:server',
-    'wiredep',
+//    'wiredep',
     'useminPrepare',
-    'concurrent:dist',
+//    'concurrent:dist',
     'autoprefixer',
 //    'concat',
-    'ngAnnotate',
+//    'ngAnnotate',
     'copy:dist',
     'cdnify',
 //    'cssmin',
