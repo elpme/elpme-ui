@@ -3,12 +3,12 @@ angular.module('elpme_RouteCSTMD', ['ui.router']).config(['$stateProvider', '$ur
     $stateProvider
       .state('home', {
         url: "/home",
-        templateUrl: '../../../../html/views/home/home.html',
+        templateUrl: '../../../html/views/home/home.html',
         controller: 'elpme_HomeCT'
       })
       .state('selectLocation', {
         url: "/select-location",
-        templateUrl: '../../../../html/views/select-location/select-location.html',
+        templateUrl: '../../../html/views/select-location/select-location.html',
         controller: 'elpme_SelectLocationCT'
       })
       .state('add-service', {

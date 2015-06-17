@@ -4,6 +4,9 @@
 /* Hind fonts path */
 /* Icon fonts path */
 /* --------------------------------------------------
+             Theme variables
+ ---------------------------------------------------*/
+/* --------------------------------------------------
                     Embedding fonts
  ---------------------------------------------------*/
 @font-face {
@@ -36,8 +39,8 @@
 }
 @font-face {
   font-family: 'hind_semibold';
-  src: url('../../vendor/fonts/hindhind-semibold-webfont.eot');
-  src: url('../../vendor/fonts/hindhind-semibold-webfont.eot?#iefix') format('embedded-opentype'), url('../../vendor/fonts/hindhind-semibold-webfont.woff2') format('woff2'), url('../../vendor/fonts/hindhind-semibold-webfont.woff') format('woff'), url('../../vendor/fonts/hindhind-semibold-webfont.ttf') format('truetype'), url('../../vendor/fonts/hindhind-semibold-webfont.svg#hindsemibold') format('svg');
+  src: url('../../vendor/fonts/hind/hind-semibold-webfont.eot');
+  src: url('../../vendor/fonts/hind/hind-semibold-webfont.eot?#iefix') format('embedded-opentype'), url('../../vendor/fonts/hind/hind-semibold-webfont.woff2') format('woff2'), url('../../vendor/fonts/hind/hind-semibold-webfont.woff') format('woff'), url('../../vendor/fonts/hind/hind-semibold-webfont.ttf') format('truetype'), url('../../vendor/fonts/hind/hind-semibold-webfont.svg#hindsemibold') format('svg');
   font-weight: normal;
   font-style: normal;
 }
@@ -90,4 +93,22 @@
  ---------------------------------------------------*/
 body {
   font-family: 'hind_regular';
+}
+/* --------------------------------------------------
+                   Header styles
+ ---------------------------------------------------*/
+.app-header {
+  background: #1c97c6;
+  color: #ffffff;
+}
+.app-header .navbar-toggle .icon-bar {
+  background: #ffffff;
+}
+.app-header .navbar-brand {
+  font-family: 'hind_semibold';
+  font-size: 2.143rem;
+}
+.app-header a.navbar-brand,
+.app-header a.navbar-brand:hover {
+  color: #ffffff;
 }
