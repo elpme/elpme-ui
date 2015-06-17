@@ -11,6 +11,11 @@ angular.module('elpme_RouteCSTMD', ['ui.router']).config(['$stateProvider', '$ur
         templateUrl: '../../../views/select-location/select-location.html',
         controller: 'elpme_SelectLocationCT'
       })
+      .state('add-service', {
+        url: "/add-service",
+        templateUrl: '../../../views/add-service/add-service.html',
+        controller: 'elpme_AddServiceCT'
+      })
     $urlRouterProvider.otherwise("/home");
   }
 ]);

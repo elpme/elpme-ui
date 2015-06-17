@@ -13,7 +13,8 @@
     'elpme_SharedDataMD',
     'elpme_RouteCSTMD',
     'elpme_HomeMD',
-    'elpme_SelectLocationMD'
+    'elpme_SelectLocationMD',
+    'elpme_AddServiceMD'
   ]).config([
     '$compileProvider',
     '$filterProvider',

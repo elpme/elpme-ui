@@ -11,6 +11,6 @@ angular.module('elpme_HomeMD')
 
       $scope.categoryList = globalService.getCategoryList();
 
-      console.log("Category List fetched successfully : ", $scope.categoryList);
+      console.log("Home Ctrl ::  List fetched successfully : ", $scope.categoryList);
 
     }]);
