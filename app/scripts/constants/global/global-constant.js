@@ -2,7 +2,6 @@ angular.module('elpme_GMD').constant('elpme_GST', {
   environmentUrls: {}, // will contain all the available environments
   env: "", // will contain the current in-use environment
   timeout: 45000,
-  socketTimeout: 10000,
 
   categoryObj: {
     "electrician": {

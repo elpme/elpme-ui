@@ -1,16 +1,15 @@
 var app = angular.module("elpme_GMD");
 app.service("elpme_GSV", [
-    'elpme_GST',
-    function (cnst) {
-      var _that = this,
-        _globalConstant = angular.copy(cnst);
+  'elpme_GST',
+  function (cnst) {
+    var _that = this;
+    _that.globalConfig = angular.copy(cnst);
+    _that.get = _get;
 
-      this.getCategoryList = _getCategoryList;
+    function _get(prop) {
+      return _that.globalConfig ? _that.globalConfig[prop] : null;
+    }
 
-      function _getCategoryList() {
-        return _globalConstant.categoryObj
-      }
+    console.log("global-service loaded properly");
 
-      console.log("global-service loaded properly");
-
-    }]);
+  }]);

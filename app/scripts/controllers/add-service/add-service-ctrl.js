@@ -10,7 +10,7 @@ angular.module('elpme_AddServiceMD')
 
       console.log("Add service controller loaded successfully");
 
-      $scope.categoryList = globalService.getCategoryList();
+      $scope.categoryList = globalService.get("categoryObj");
 
       console.log("Add-Service Ctrl :: Category List fetched successfully : ", $scope.categoryList);
 

@@ -9,7 +9,7 @@ angular.module('elpme_HomeMD')
 
       console.log("Home controller loaded successfully");
 
-      $scope.categoryList = globalService.getCategoryList();
+      $scope.categoryList = globalService.get("categoryObj");
 
       console.log("Home Ctrl ::  List fetched successfully : ", $scope.categoryList);
 
