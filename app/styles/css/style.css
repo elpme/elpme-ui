@@ -107,8 +107,49 @@ body {
 .app-header .navbar-brand {
   font-family: 'hind_semibold';
   font-size: 2.143rem;
+  padding: 20px 17px;
+  height: 58px;
 }
 .app-header a.navbar-brand,
 .app-header a.navbar-brand:hover {
   color: #ffffff;
+}
+.app-header .nav .open > a {
+  background: #1c97c6;
+}
+.app-header .nav .open > a:focus,
+.app-header .nav .open > a:hover {
+  background: #1c97c6;
+}
+.app-header .nav > li > a {
+  color: #ffffff;
+}
+.app-header .nav > li > a:hover,
+.app-header .nav > li > a:focus {
+  background: #1c97c6;
+  color: #ffffff;
+}
+/* --------------------------------------------------
+                   Anchor styles
+ ---------------------------------------------------*/
+.link-icon i {
+  vertical-align: middle;
+}
+.link-icon .icon-Addplus {
+  font-size: 2.8rem;
+}
+.user-image {
+  width: 28px;
+  height: 28px;
+  display: inline-block;
+  border: 1px solid #fff;
+  border-radius: 14px;
+  margin-right: 5px;
+  vertical-align: middle;
+  background: #6bcf00;
+  overflow: hidden;
+}
+.user-image img {
+  max-width: 100%;
+  height: auto;
 }
