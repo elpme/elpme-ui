@@ -5,11 +5,12 @@ angular.module('elpme_HomeMD')
     '$scope',
     'elpme_GSV',
     'elpme_SharedDataSV',
-    function ($scope, globalService, SharedDataSV) {
+    "Core_SV",
+    function ($scope, globalService, SharedDataSV, CoreSV) {
 
       console.log("Home controller loaded successfully");
 
-      $scope.categoryList = globalService.getCategoryList();
+      $scope.categoryList = globalService.get("categoryObj");
 
       console.log("Home Ctrl ::  List fetched successfully : ", $scope.categoryList);
 
