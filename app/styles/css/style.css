@@ -6734,6 +6734,21 @@ ul {
   font-size: 6rem;
   color: #00b6ea;
 }
+.app-footer {
+  padding-top: 40px;
+  background: #46474c;
+  color: #fff;
+}
+.app-footer a {
+  color: #fff;
+}
+.app-footer a:hover,
+.app-footer afocus {
+  color: #fff;
+}
+.link-heading {
+  font-size: 30px;
+}
 /* --------------------------------------------------
                    Home page styles
  ---------------------------------------------------*/
@@ -6780,8 +6795,11 @@ ul {
   font-family: 'hind_semibold';
 }
 .features {
+  float: left;
+  width: 100%;
   list-style-type: none;
   text-align: center;
+  margin-bottom: 5%;
 }
 .features-heading {
   font-size: 35px;
