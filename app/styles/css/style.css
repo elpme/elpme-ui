@@ -6737,17 +6737,17 @@ ul {
 .app-footer {
   padding-top: 40px;
   background: #46474c;
-  color: #fff;
+  color: #ffffff;
 }
 .app-footer a {
-  color: #fff;
+  color: #ffffff;
 }
 .app-footer a:hover,
 .app-footer afocus {
-  color: #fff;
+  color: #ffffff;
 }
 .link-heading {
-  font-size: 30px;
+  font-size: 3rem;
 }
 /* --------------------------------------------------
                    Home page styles
