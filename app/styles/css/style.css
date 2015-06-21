@@ -6699,7 +6699,7 @@ ul {
   width: 28px;
   height: 28px;
   display: inline-block;
-  border: 1px solid #fff;
+  border: 1px solid #ffffff;
   border-radius: 14px;
   margin-right: 5px;
   vertical-align: middle;
@@ -6730,7 +6730,7 @@ ul {
   width: 64px;
   height: 64px;
   border-radius: 32px;
-  background: #fff;
+  background: #ffffff;
   font-size: 6rem;
   color: #00b6ea;
 }
@@ -6754,7 +6754,7 @@ ul {
  ---------------------------------------------------*/
 .thumbnail-list .thumbnail {
   border-radius: 0;
-  border-color: #117ca1 ;
+  border-color: #117ca1;
   border-top: 0;
   border-bottom: 0;
 }
@@ -6764,7 +6764,7 @@ ul {
 .thumbnail-list li {
   min-height: 153px;
   background: #00b6ea;
-  color: #fff;
+  color: #ffffff;
   text-align: center;
   padding: 20px;
 }
@@ -6778,7 +6778,7 @@ ul {
   font-size: 2rem;
 }
 .image-text-wrapper {
-  color: #fff;
+  color: #ffffff;
   padding: 14% 0;
 }
 .image-text-wrapper p {
@@ -6788,10 +6788,10 @@ ul {
   margin-bottom: 32px;
 }
 .small-label {
-  font-size: 25px;
+  font-size: 2.5rem;
 }
 .medium-label {
-  font-size: 45px;
+  font-size: 4.5rem;
   font-family: 'hind_semibold';
 }
 .features {
@@ -6802,10 +6802,10 @@ ul {
   margin-bottom: 5%;
 }
 .features-heading {
-  font-size: 35px;
+  font-size: 3.5rem;
   color: #00b6ea;
 }
 .features-caption {
-  font-size: 24px;
+  font-size: 2.4rem;
   font-family: 'hind_medium';
 }
