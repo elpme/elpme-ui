@@ -8,10 +8,8 @@
     <!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
     <!-- build:css(.) styles/vendor.css -->
     <!-- bower:css -->
-    <link rel="stylesheet" href="bower_components/bootstrap/dist/css/bootstrap.css" />
     <!-- endbower -->
     <!-- endbuild -->
-    <!-- build:css(.tmp) styles/main.css -->
     <link rel="stylesheet" href="styles/css/style.css">
     <!-- endbuild -->
 </head>
@@ -25,8 +23,7 @@
 <div ui-view="header"></div>
 <!--Header ends-->
 <!--Main content starts-->
-<main class="container">
-    <div ui-view></div>
+<main class="container" ui-view>
 </main>
 <!--Main content ends-->
 <!--Footer starts-->
