@@ -12,27 +12,9 @@
   <!--Jumbotron ends here -->
   <!--Catagry list starts here -->
   <ul class="thumbnail-list">
-    <li class="col-xs-6 col-sm-2 thumbnail">
-      <label class="category-label">PLUMBER</label>
-    </li>
-    <li class="col-xs-6 col-sm-2 thumbnail">
-      <i class="icon-Electrician category-icon"></i>
-      <label class="category-label">ELECTRICIAN</label>
-    </li>
-    <li class="col-xs-6 col-sm-2 thumbnail">
-      <i class="icon-MedicalStore category-icon"></i>
-      <label class="category-label">MEDICAL STORE</label>
-    </li>
-    <li class="col-xs-6 col-sm-2 thumbnail">
-      <i class="icon-GroceryStore category-icon"></i>
-      <label class="category-label">GROCERY STORE</label>
-    </li>
-    <li class="col-xs-6 col-sm-2 thumbnail">
-      <i class="icon-Housemade category-icon"></i>
-      <label class="category-label">HOUSE MAID</label>
-    </li>
-    <li class="col-xs-6 col-sm-2 thumbnail">
-      <label class="category-label">VEHICLE REPAIR</label>
+    <li class="col-xs-6 col-sm-2 thumbnail" ng-repeat="(key,value) in categoryList">
+        <i class="category-icon" ng-class="value.icon"></i>
+        <label class="category-label">{{value.label}}</label>
     </li>
   </ul>
   <!--Catagry list ends here -->

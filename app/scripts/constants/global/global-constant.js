@@ -7,7 +7,7 @@ angular.module('elpme_GMD').constant('elpme_GST', {
     "electrician": {
       label: "ELECTRICIAN",
       value: "electrician",
-      icon: ""
+      icon: "icon-Electrician"
     },
     "plumber": {
       label: "PUMBER",
@@ -17,7 +17,7 @@ angular.module('elpme_GMD').constant('elpme_GST', {
     "houseMaid": {
       label: "COOK/MAID",
       value: "house maid",
-      icon: ""
+      icon: "icon-Housemade"
     },
     "houseCleaning": {
       label: "PEST CONTROL/CLEANING",
