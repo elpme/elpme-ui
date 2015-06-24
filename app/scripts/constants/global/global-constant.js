@@ -14,24 +14,24 @@ angular.module('elpme_GMD').constant('elpme_GST', {
       value: "plumber",
       icon: ""
     },
-    "mediStore": {
-      label: "MEDICAL STORE",
-      value: "medicalstore",
-      icon: ""
-    },
-    "grocStore": {
-      label: "GROCERY STORE",
-      value: "grocery store",
-      icon: ""
-    },
     "houseMaid": {
-      label: "HOUSE MAID",
+      label: "COOK/MAID",
       value: "house maid",
+      icon: ""
+    },
+    "houseCleaning": {
+      label: "PEST CONTROL/CLEANING",
+      value: "house cleaning",
       icon: ""
     },
     "vehcRepair": {
       label: "VEHICLE REPAIR",
       value: "vehicle repair",
+      icon: ""
+    },
+    "onRentService": {
+      label: "ON RENTAL SERVICE",
+      value: "on rent",
       icon: ""
     }
   }
