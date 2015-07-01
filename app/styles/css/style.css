@@ -6736,6 +6736,7 @@ ul {
 }
 .app-footer {
   padding-top: 40px;
+  padding-bottom: 40px;
   background: #46474c;
   color: #ffffff;
 }
@@ -6747,19 +6748,25 @@ ul {
   color: #ffffff;
 }
 .link-heading {
-  font-size: 3rem;
+  font-size: 2rem;
 }
 /* --------------------------------------------------
                    Home page styles
  ---------------------------------------------------*/
+.thumbnail-list {
+  margin-bottom: 20px;
+}
 .thumbnail-list .thumbnail {
   border-radius: 0;
   border-color: #117ca1;
-  border-top: 0;
+  margin-bottom: 0;
+}
+.thumbnail-list .thumbnail:first-child {
   border-bottom: 0;
 }
 .thumbnail-list .thumbnail + .thumbnail {
   border-left: 0;
+  border-bottom: 0;
 }
 .thumbnail-list li {
   min-height: 153px;
@@ -6768,6 +6775,22 @@ ul {
   text-align: center;
   padding: 20px;
 }
+.thumbnail-list:before,
+.thumbnail-list:after {
+  content: " ";
+  display: table;
+}
+.thumbnail-list:after {
+  clear: both;
+}
+.thumbnail-list:before,
+.thumbnail-list:after {
+  content: " ";
+  display: table;
+}
+.thumbnail-list:after {
+  clear: both;
+}
 .category-icon {
   display: block;
   font-size: 8rem;
@@ -6775,7 +6798,7 @@ ul {
 .category-label {
   font-family: 'hind_semibold';
   text-transform: uppercase;
-  font-size: 2rem;
+  font-size: 1.8rem;
 }
 .image-text-wrapper {
   color: #ffffff;
@@ -6802,10 +6825,21 @@ ul {
   margin-bottom: 5%;
 }
 .features-heading {
-  font-size: 3.5rem;
+  font-size: 3rem;
   color: #00b6ea;
 }
 .features-caption {
-  font-size: 2.4rem;
+  font-size: 2rem;
   font-family: 'hind_medium';
+}
+/* --------------------------------------------------
+                  Responsive Styles
+ ---------------------------------------------------*/
+@media (max-width: 767px) {
+  .navbar-toggle {
+    height: 58px;
+    margin: 0;
+    border-radius: 0;
+    background: #49acd1;
+  }
 }

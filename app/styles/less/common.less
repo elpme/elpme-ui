@@ -2,13 +2,17 @@
                    Home page styles
  ---------------------------------------------------*/
 .thumbnail-list {
+  margin-bottom: 20px;
   .thumbnail {
     border-radius :0;
     border-color: @color-117ca1 ;
-    border-top: 0;
-    border-bottom: 0;
+    margin-bottom: 0;
+    &:first-child{
+      border-bottom: 0;
+    }
     & + .thumbnail{
       border-left: 0;
+      border-bottom: 0;
     }
   }
   li {
@@ -18,6 +22,7 @@
     .text-center;
     padding: 20px;
   }
+  .clearfix;
 }
 
 .category-icon{
@@ -28,7 +33,7 @@
 .category-label{
   font-family: 'hind_semibold';
   .text-uppercase;
-  font-size: 2rem;
+  font-size: 1.8rem;
 }
 
 .image-text-wrapper{
@@ -58,12 +63,12 @@
 }
 
 .features-heading{
-  font-size: 3.5rem;
+  font-size: 3rem;
   color: @color-00b6ea;
 }
 
 .features-caption{
-  font-size: 2.4rem;
+  font-size: 2rem;
   font-family: 'hind_medium';
 }
 
