@@ -16,6 +16,7 @@
     'elpme_SelectLocationMD',
     'elpme_AddServiceMD',
     'elpme_CoreServiceMD',
+    'elpme_ClientStoreSVMD'
   ]).config([
     '$compileProvider',
     '$filterProvider',

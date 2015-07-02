@@ -7,31 +7,31 @@ angular.module('elpme_GMD').constant('elpme_GST', {
     "electrician": {
       label: "ELECTRICIAN",
       value: "electrician",
-      icon: ""
+      icon: "icon-Electrician"
     },
     "plumber": {
       label: "PUMBER",
       value: "plumber",
       icon: ""
     },
-    "mediStore": {
-      label: "MEDICAL STORE",
-      value: "medicalstore",
-      icon: ""
-    },
-    "grocStore": {
-      label: "GROCERY STORE",
-      value: "grocery store",
-      icon: ""
-    },
     "houseMaid": {
-      label: "HOUSE MAID",
+      label: "COOK/MAID",
       value: "house maid",
+      icon: "icon-Housemade"
+    },
+    "houseCleaning": {
+      label: "PEST CONTROL/CLEANING",
+      value: "house cleaning",
       icon: ""
     },
     "vehcRepair": {
       label: "VEHICLE REPAIR",
       value: "vehicle repair",
+      icon: ""
+    },
+    "onRentService": {
+      label: "ON RENTAL SERVICE",
+      value: "on rent",
       icon: ""
     }
   }

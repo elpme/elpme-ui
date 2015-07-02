@@ -1,4 +1,3 @@
-
 <div class="container-fluid">
   <div class="row">
     <!--Jumbotron starts here -->
@@ -14,78 +13,41 @@
     <!--Jumbotron ends here -->
     <!--Catagry list starts here -->
     <ul class="thumbnail-list">
-      <li class="col-xs-6 col-sm-2 thumbnail">
-        <label class="category-label">PLUMBER</label>
-      </li>
-      <li class="col-xs-6 col-sm-2 thumbnail">
-        <i class="icon-Electrician category-icon"></i>
-        <label class="category-label">ELECTRICIAN</label>
-      </li>
-      <li class="col-xs-6 col-sm-2 thumbnail">
-        <i class="icon-MedicalStore category-icon"></i>
-        <label class="category-label">MEDICAL STORE</label>
-      </li>
-      <li class="col-xs-6 col-sm-2 thumbnail">
-        <i class="icon-GroceryStore category-icon"></i>
-        <label class="category-label">GROCERY STORE</label>
-      </li>
-      <li class="col-xs-6 col-sm-2 thumbnail">
-        <i class="icon-Housemade category-icon"></i>
-        <label class="category-label">HOUSE MAID</label>
-      </li>
-      <li class="col-xs-6 col-sm-2 thumbnail">
-        <label class="category-label">VEHICLE REPAIR</label>
+      <li class="col-xs-6 col-sm-2 thumbnail" ng-repeat="(key,value) in categoryList">
+        <i class="category-icon" ng-class="value.icon"></i>
+        <label class="category-label">{{value.label}}</label>
       </li>
     </ul>
     <!--Catagry list ends here -->
   </div>
 </div>
-
 <div class="container">
   <div class="row">
+
     <!-- Features section starts here -->
     <ul class="features">
       <li class="col-sm-4">
-          <h3 class="features-heading">Quick</h3>
-          <div class="icon-round">
+        <h3 class="features-heading">Quick</h3>
+        <div class="icon-round">
 
-          </div>
-          <p class="features-caption">Our tools will help you quickly choose the right service for your needs.</p>
+        </div>
+        <p class="features-caption">Our tools will help you quickly choose the right service for your needs.</p>
       </li>
       <li class="col-sm-4">
-          <h3 class="features-heading">Find Near by</h3>
-          <div class="icon-round">
-            <i class="icon-Locationpin"></i>
-          </div>
-          <p class="features-caption">Our tools will help you quickly choose the right service for your needs.</p>
+        <h3 class="features-heading">Find Near by</h3>
+        <div class="icon-round">
+          <i class="icon-Locationpin"></i>
+        </div>
+        <p class="features-caption">Our tools will help you quickly choose the right service for your needs.</p>
       </li>
       <li class="col-sm-4">
-          <h3 class="features-heading">Review</h3>
-          <div class="icon-round">
+        <h3 class="features-heading">Review</h3>
+        <div class="icon-round">
 
-          </div>
-          <p class="features-caption">Our tools will help you quickly choose the right service for your needs.</p>
+        </div>
+        <p class="features-caption">Our tools will help you quickly choose the right service for your needs.</p>
       </li>
     </ul>
     <!-- Features section ends here -->
   </div>
 </div>
-
-<!--<div>-->
-    <!--Hi, you are at home page !!-->
-    <!--<i class="icon-Addplus"></i>-->
-    <!--<i class="icon-Electrician"></i>-->
-    <!--<i class="icon-GroceryStore"></i>-->
-    <!--<i class="icon-Housemade"></i>-->
-    <!--<i class="icon-Locationpin"></i>-->
-    <!--<i class="icon-MedicalStore"></i>-->
-    <!--<i class="icon-Menu"></i>-->
-    <!--<i class="icon-Mideye"></i>-->
-
-    <!--<div>-->
-        <!--<a ui-sref="app.selectLocation">Select Category</a>-->
-    <!--</div>-->
-    <!--<div>-->
-        <!--<a >Add Service</a>-->
-    <!--</div>-->
-<!--</div>-->

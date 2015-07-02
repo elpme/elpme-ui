@@ -1,7 +1,8 @@
 var app = angular.module("elpme_GMD");
 app.service("elpme_GSV", [
   'elpme_GST',
-  function (cnst) {
+  'elpme_ClientStoreSV',
+  function (cnst, ClientStoreSV) {
     var _that = this;
     _that.globalConfig = angular.copy(cnst);
     _that.get = _get;
